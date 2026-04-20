@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>1h Ora com Deus</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0a0a23, #1e3c72);
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.12);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.card strong {
+    font-size: 16px;
+}
+
+input {
+    width: 90%;
+    padding: 6px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+}
+
+.cronograma {
+    margin: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.footer {
+    margin: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🙏 1h ORA COM DEUS</h1>
+<h3>Pelo Aniversário da Igreja</h3>
+
+<div class="container">
+
+<script>
+const horarios = [
+"00h - 01h","01h - 02h","02h - 03h","03h - 04h",
+"04h - 05h","05h - 06h","06h - 07h","07h - 08h",
+"08h - 09h","09h - 10h","10h - 11h","11h - 12h",
+"12h - 13h","13h - 14h","14h - 15h","15h - 16h",
+"16h - 17h","17h - 18h","18h - 19h","19h - 20h",
+"20h - 21h","21h - 22h","22h - 23h","23h - 24h"
+];
+
+horarios.forEach(hora => {
+    document.write(`
+        <div class="card">
+            <strong>${hora}</strong><br>
+            Nome:<br>
+            <input type="text" placeholder="Escrever nome">
+        </div>
+    `);
+});
+</script>
+
+</div>
+
+<div class="cronograma">
+<h2>📖 Como usar sua 1 hora com Deus</h2>
+
+<p><b>10 min</b> – Adoração e humilhação diante de Deus</p>
+<p><b>10 min</b> – Leitura de 1 Salmo</p>
+<p><b>10 min</b> – Oração pelo aniversário da igreja</p>
+<p><b>15 min</b> – Louvor (cantar 2 hinos)</p>
+<p><b>15 min</b> – Oração por:</p>
+<p>Família • Trabalho • Estudos • Cura • Finanças • Salvação de almas • Jovens • Igreja</p>
+
+</div>
+
+<div class="footer">
+✨ “Uma hora com Deus pode mudar tudo”
+</div>
+
+</body>
+</html>
