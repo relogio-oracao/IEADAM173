@@ -67,22 +67,40 @@ input {
 
 <div class="container">
 
+
 <script>
-const horarios = [
-"00h - 01h","01h - 02h","02h - 03h","03h - 04h",
-"04h - 05h","05h - 06h","06h - 07h","07h - 08h",
-"08h - 09h","09h - 10h","10h - 11h","11h - 12h",
-"12h - 13h","13h - 14h","14h - 15h","15h - 16h",
-"16h - 17h","17h - 18h","18h - 19h","19h - 20h",
-"20h - 21h","21h - 22h","22h - 23h","23h - 24h"
+const dados = [
+["00h - 01h", "Yara"],
+["01h - 02h", "Esther Rufino"],
+["02h - 03h", "Pastora Mirian"],
+["03h - 04h", "Irmã Rosa"],
+["04h - 05h", "Eduardo Efraim"],
+["05h - 06h", "Neide"],
+["06h - 07h", "Pastor Ladislau"],
+["07h - 08h", "Alzenira"],
+["08h - 09h", "Rita Rufino"],
+["09h - 10h", "sem nome"],
+["10h - 11h", "Josiane"],
+["11h - 12h", "Pastora Gil"],
+["12h - 13h", "Estela"],
+["13h - 14h", "Rhana Sofia"],
+["14h - 15h", "Pastor Djalma"],
+["15h - 16h", "sem nome"],
+["16h - 17h", "sem nome"],
+["17h - 18h", "Jonas Januário"],
+["18h - 19h", "Manoel"],
+["19h - 20h", "Lidiane"],
+["20h - 21h", "Armando"],
+["21h - 22h", "Gabriel"],
+["22h - 23h", "Rita Maciel"],
+["23h - 24h", "Pastor Esequiel"]
 ];
 
-horarios.forEach(hora => {
+dados.forEach(item => {
     document.write(`
         <div class="card">
-            <strong>${hora}</strong><br>
-            Nome:<br>
-            <input type="text" placeholder="Escrever nome">
+            <strong>${item[0]}</strong><br>
+            <p><b>${item[1]}</b></p>
         </div>
     `);
 });
